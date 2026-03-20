@@ -1,5 +1,6 @@
 site_name: Standby-Time's Blog
 site_url: https://tpdcrn.github.io/
+docs_dir: docs
 
 theme:
   name: material
