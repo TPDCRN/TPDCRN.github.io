@@ -25,7 +25,6 @@ theme:
   features:
     - navigation.tabs              # 顶部大分类导航
     - navigation.sections          # 侧边栏分组显示
-    - navigation.expand            # 默认展开侧边栏（可选，看你喜好）
     - navigation.indexes           # 【核心】开启目录索引功能
     - navigation.top               # 回到顶部按钮
     - search.suggest               # 搜索自动建议
