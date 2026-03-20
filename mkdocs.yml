@@ -30,5 +30,6 @@ theme:
 
 nav:
   - 主页: index.md
-  - 技术: technology.md
+  - 技术: 
+    - 概览: technology.md
   - 关于: about.md
