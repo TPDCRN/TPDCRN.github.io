@@ -1,0 +1,33 @@
+name: deploy-blog
+on:
+  push:
+    branches:
+      - main
+permissions:
+  contents: write
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 强制拉取所有历史和分支
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+
+      - name: Install dependencies
+        run: pip install mkdocs-material
+
+      - name: Debug Path and Deploy
+        run: |
+          echo "Checking current directory..."
+          ls -R
+          # 如果发现 docs 不存在，手动创建一个空的防止崩溃
+          if [ ! -d "docs" ]; then
+            mkdir docs
+            echo "# Welcome" > docs/index.md
+          fi
+          mkdocs gh-deploy --force
