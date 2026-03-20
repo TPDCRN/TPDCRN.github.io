@@ -33,8 +33,12 @@ nav:
   - 技术笔记: 
     - 概览: technology/index.md
     - 编程语言: 
-      - C语言: technology/c.md
-      - C++: technology/c++.md
-      - Java: technology/java.md
-      - Python: technology/python.md
+      - C语言: 
+        - 概览: technology/c/index.md
+      - C++: 
+        - 概览: technology/c++/index.md
+      - Java: 
+        - 概览: technology/java/index.md
+      - Python: 
+        - 概览: technology/python/index.md
   - 关于: about.md
