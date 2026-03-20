@@ -23,10 +23,13 @@ theme:
         icon: material/weather-night
         name: 切换至浅色模式
   features:
-    - navigation.tabs              # 顶部导航
-    - navigation.sections          # 侧边栏分组
-    - navigation.top               # 回到顶部
-    - search.suggest               # 搜索建议
+    - navigation.tabs              # 顶部大分类导航
+    - navigation.sections          # 侧边栏分组显示
+    - navigation.expand            # 默认展开侧边栏（可选，看你喜好）
+    - navigation.indexes           # 【核心】开启目录索引功能
+    - navigation.top               # 回到顶部按钮
+    - search.suggest               # 搜索自动建议
+    - content.code.copy            # 代码框右上角显示复制按钮
 
 nav:
   - 主页: index.md
