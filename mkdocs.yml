@@ -8,7 +8,7 @@ theme:
   palette:
     # 默认深色模式 (Slate)
     - scheme: slate
-      primary：black # 顶部颜色
+      primary: black # 顶部颜色
       accent: indigo
       toggle:
         icon: material/weather-night
