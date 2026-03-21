@@ -1,32 +1,47 @@
-/* 1. 极简纯黑背景 */
+/* ============================================================ */
+/* 🌙 深色模式专属 (Slate) - 极致纯黑定制 */
+/* ============================================================ */
 [data-md-color-scheme="slate"] {
-    --md-default-bg-color: #000000;           /* 背景纯黑 */
-    --md-default-bg-color--light: #000000;    /* 搜索框背景纯黑 */
-    --md-code-bg-color: #0d1117;              /* 代码块使用类似 GitHub Dark 的深色 */
-    --md-admonition-bg-color: #000000;        /* 提示框背景纯黑 */
+    --md-default-bg-color: #000000 !important;           /* 背景纯黑 */
+    --md-default-bg-color--light: #000000 !important;    /* 搜索框/次级背景纯黑 */
+    --md-code-bg-color: #0d1117 !important;              /* 代码块 GitHub Dark 风格 */
+    --md-admonition-bg-color: #000000 !important;        /* 提示框背景纯黑 */
 }
 
-/* 2. 移除所有阴影和边框（Modern 变体的核心） */
-.md-header {
+/* 仅在深色模式下移除阴影和修改顶栏 */
+[data-md-color-scheme="slate"] .md-header {
     background-color: #000000 !important;
-    box-shadow: none !important;              /* 去掉顶栏阴影 */
-    border-bottom: 0.05rem solid #333;        /* 加上一条极细的深灰线，非常有质感 */
+    box-shadow: none !important;
+    border-bottom: 0.05rem solid #333;
 }
 
-.md-sidebar {
+/* 仅在深色模式下修改侧边栏 */
+[data-md-color-scheme="slate"] .md-sidebar {
     background-color: #000000 !important;
 }
 
-/* 3. 让搜索框看起来更高级 */
-.md-search__inner {
+/* 仅在深色模式下让搜索框看起来高级 */
+[data-md-color-scheme="slate"] .md-search__inner {
     background-color: #161b22 !important;
     border: 1px solid #30363d;
 }
 
-/* 4. 这里的字体也会让你的博客瞬间变帅 */
+/* ============================================================ */
+/* ☀️ 浅色模式专属 (Default) - 保持原本的清爽 */
+/* ============================================================ */
+[data-md-color-scheme="default"] .md-header {
+    background-color: #ffffff !important; 
+    color: #000000;
+    box-shadow: 0 0 0.2rem rgba(0,0,0,0.1); /* 浅色模式保留轻微阴影 */
+}
+
+/* ============================================================ */
+/* 🖋️ 通用配置 (全局生效) */
+/* ============================================================ */
 body, input {
     font-family: "Inter", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
 }
+
 code, kbd, pre {
     font-family: "JetBrains Mono", "Roboto Mono", monospace !important;
 }
