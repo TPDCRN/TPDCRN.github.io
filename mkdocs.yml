@@ -9,7 +9,7 @@ theme:
     # 默认深色模式 (Slate)
     - scheme: slate
       primary: black      # 顶部导航栏颜色
-      accent: indigo     # 鼠标悬停、链接、按钮的强调色（靛蓝色，非常高级）
+      accent: gray
       toggle:
         icon: material/weather-night
         name: 切换至浅色模式
