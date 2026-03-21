@@ -8,8 +8,6 @@ theme:
   palette:
     # 默认深色模式 (Slate)
     - scheme: slate
-      primary: black      # 顶部导航栏颜色
-      accent: gray
       toggle:
         icon: material/weather-night
         name: 切换至浅色模式
