@@ -6,22 +6,20 @@ theme:
   name: material
   language: zh # 中文界面
   palette:
-    # 浅色模式
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
+    # 默认深色模式 (Slate)
+    - scheme: slate
+      primary: black      # 顶部导航栏颜色
+      accent: indigo     # 鼠标悬停、链接、按钮的强调色（靛蓝色，非常高级）
+      toggle:
+        icon: material/weather-night
+        name: 切换至浅色模式
+    # 可选浅色模式 (Default)
+    - scheme: default
       primary: white
       accent: indigo
       toggle:
         icon: material/weather-sunny
         name: 切换至深色模式
-    # 深色模式    
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: black
-      accent: indigo
-      toggle:
-        icon: material/weather-night
-        name: 切换至浅色模式
   features:
     - navigation.tabs              # 顶部大分类导航
     - navigation.sections          # 侧边栏分组显示
@@ -30,6 +28,19 @@ theme:
     - navigation.top               # 回到顶部按钮
     - search.suggest               # 搜索自动建议
     - content.code.copy            # 代码框右上角显示复制按钮
+
+markdown_extensions:
+  - pymdownx.highlight:        # 代码高亮扩展
+      anchor_linenums: true
+      line_spans: __span
+      pygments_style: material # 强制使用 Material 风格的代码配色
+  - pymdownx.inlinehilite      # 支持行内代码高亮
+  - pymdownx.snippets          # 支持代码片段复用
+  - pymdownx.superfences       # 支持复杂的代码块（如嵌套列表中的代码）
+  - admonition                 # 开启“警告/提示框”功能（非常推荐！）
+  - pymdownx.details           # 支持可折叠的提示框
+  - pymdownx.caret             # 支持上标/下标
+  - pymdownx.mark              # 支持文本高亮（像荧光笔一样）
 
 nav:
   - 主页: index.md
