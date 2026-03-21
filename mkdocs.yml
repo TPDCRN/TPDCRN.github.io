@@ -25,7 +25,8 @@ theme:
   features:
     - navigation.tabs              # 顶部大分类导航
     - navigation.sections          # 侧边栏分组显示
-    - navigation.indexes           # 【核心】开启目录索引功能
+    - navigation.expand            # 强制默认展开所有子目录，不再需要手动点箭头
+    - navigation.indexes           # 开启目录索引功能
     - navigation.top               # 回到顶部按钮
     - search.suggest               # 搜索自动建议
     - content.code.copy            # 代码框右上角显示复制按钮
