@@ -39,7 +39,7 @@ nav:
       - C语言: 
         - 概览: technology/c/index.md
       - C++: 
-        - 概览: technology/c++/index.md
+        - 概览: technology/cpp/index.md
       - Java: 
         - 概览: technology/java/index.md
       - Python: 
