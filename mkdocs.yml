@@ -31,6 +31,7 @@ theme:
     - navigation.top               # 回到顶部按钮
     - search.suggest               # 搜索自动建议
     - content.code.copy            # 代码框右上角显示复制按钮
+  favicon: assets/favicon.png  # 图标  
 
 extra_css:
   - stylesheets/extra.css    
